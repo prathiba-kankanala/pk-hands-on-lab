@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: +{{ ref('WORK', 'DIM_CUSTOMER') }}
+name: SampleJob
+type: Job
