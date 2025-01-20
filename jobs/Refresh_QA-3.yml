@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "3"
+includeSelector: " +{name:FCT_REGION}"
+name: Refresh_QA
+type: Job
