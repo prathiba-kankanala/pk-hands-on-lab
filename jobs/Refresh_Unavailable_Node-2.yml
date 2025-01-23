@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "2"
-includeSelector: +{name:FCT_REGION}
+includeSelector: +{name:DIM_CUSTOMER_CUSTOMER}
 name: Refresh_Unavailable_Node
 type: Job
