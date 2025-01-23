@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: +{name:FCT_CUSTOMER}
+name: QA_Refresh_FCT_NODE
+type: Job
