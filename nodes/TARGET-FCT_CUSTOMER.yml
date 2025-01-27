@@ -1,0 +1,183 @@
+fileVersion: 1
+id: 00121483-1b51-4cb6-943c-41449ca0856f
+name: FCT_CUSTOMER
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26c2d655-ecbf-4da4-a47f-c80d16c7b06b
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a68b494e-1690-4971-8071-119aaa80ff03
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b424255-ceef-49e5-b11d-7cede6215ccf
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f86b8f95-6680-4ff5-aea3-c259d7cc1fa7
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 865d2e6e-2da0-4220-8d17-91fc0f66680a
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 01dd0e65-8fa3-4d78-b8c8-19a554a91b7b
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48daf86d-75cb-4347-8756-4d9884d350a3
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: C_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9915c1f9-c742-48a1-aab1-0fa9b6ac9899
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 653e5650-9d11-4260-bec8-1c09fb7a1ecb
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1963b47d-4f23-4b14-9a71-0cd921b323db
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 263b70b9-d11c-49ea-81f7-150aa968d187
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a97c0fb6-ae9f-4ce4-8fea-30342c437565
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4971bfb-af3e-4cfc-9bd8-64faf3603ff8
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a49bd63-75c4-4737-8c05-91a39c950cf8
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7e8b88d-3402-4f6c-a10c-1a258ae0483a
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: VARCHAR(117)
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7854d092-a46f-44fb-a20d-b79ddb192789
+                stepCounter: 8a4186c3-3c1e-4277-9776-156b81d4cb79
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d9f170e-3ff1-40a2-81fd-e78290c9388b
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1a890ea-4179-458d-9523-95cac130b91f
+          stepCounter: 00121483-1b51-4cb6-943c-41449ca0856f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }} "CUSTOMER"
+        name: FCT_CUSTOMER
+        noLinkRefs: []
+  name: FCT_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node
