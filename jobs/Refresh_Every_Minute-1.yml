@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: +{name:FCT_PART}
+name: Refresh_Every_Minute
+type: Job
