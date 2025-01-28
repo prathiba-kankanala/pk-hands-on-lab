@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "7"
+mappingDefinitions:
+  SRC:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+  TARGET:
+    database: PK
+    schema: PR6420
+name: ENV4
+type: Environment
