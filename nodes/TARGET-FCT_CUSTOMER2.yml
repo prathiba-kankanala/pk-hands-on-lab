@@ -1,6 +1,6 @@
 fileVersion: 1
-id: cea102ef-78ff-4600-867c-5873e9c55edd
-name: DIM_CUSTOMER
+id: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
+name: FCT_CUSTOMER2
 operation:
   config:
     postSQL: ""
@@ -15,31 +15,13 @@ operation:
   metadata:
     appliedNodeTests: []
     columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 176cc864-2c61-469d-a1c4-e750c21dea21
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
-        config: {}
-        dataType: NUMBER
-        defaultValue: ""
-        description: ""
-        isSurrogateKey: true
-        name: DIM_CUSTOMER_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ae4b8107-597c-40f9-961a-056f53f3c211
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 26e98f47-4d54-4125-a9c1-323816145583
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: C_CUSTKEY
         nullable: false
         sourceColumnReferences:
@@ -49,8 +31,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 57cbe80d-7fb2-4e81-a67d-5018282e8f88
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 27726021-ed41-4a76-8f4c-8a1d840565d6
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -63,8 +45,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b6a68439-6952-47c0-bd04-8de5071b1f1c
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 819e832d-1cf8-44c2-a4e7-04e9d5779d42
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: VARCHAR(40)
         description: ""
@@ -77,8 +59,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8bbe6b83-a987-4f87-826c-138d82483414
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: ce2b6267-0f0e-4d19-976d-838a30df7491
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -91,8 +73,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8f6e98b4-73e3-45f1-b68e-ddf21c649d5b
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 3fc9df47-e0d1-453e-8d92-f6c2d79c116d
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -105,8 +87,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 03ad185b-b3b7-44da-aa19-7613950305c2
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 787a12c0-ffb6-47ab-8382-73b2cd0cac93
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -119,8 +101,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9657a69c-b4dc-46ff-99bb-aa66bccbb29f
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 40c54811-73f0-441d-96f6-aa2136121906
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -133,8 +115,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3a416f70-cb4a-4720-9a2f-bf8ee214c2c3
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: f30f522b-4475-4fed-af9f-97df66a64cd1
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: VARCHAR(117)
         description: ""
@@ -150,76 +132,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9efee6fe-8a32-4f29-8290-c6baf7b3cb10
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
-        config: {}
-        dataType: NUMBER
-        defaultValue: ""
-        description: ""
-        isSystemVersion: true
-        name: SYSTEM_VERSION
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 7928a348-2d27-40cc-a8a3-41a85db04d7f
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
-        config: {}
-        dataType: VARCHAR
-        defaultValue: ""
-        description: ""
-        isSystemCurrentFlag: true
-        name: SYSTEM_CURRENT_FLAG
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: ede5ce92-52ff-47d3-a3e9-f7e869996129
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
-        config: {}
-        dataType: TIMESTAMP
-        defaultValue: ""
-        description: ""
-        isSystemStartDate: true
-        name: SYSTEM_START_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 15436fc4-2cbc-4c5a-833f-f691a356684a
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
-        config: {}
-        dataType: TIMESTAMP
-        defaultValue: ""
-        description: ""
-        isSystemEndDate: true
-        name: SYSTEM_END_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: b84ab58d-5130-48d6-9b04-df7deb9c91a1
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 9a3e5fce-0b18-4243-83da-1ae28b67990b
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -235,8 +149,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: acdac2b7-ece3-41c5-a93d-ec5e66a343e0
-          stepCounter: cea102ef-78ff-4600-867c-5873e9c55edd
+          columnCounter: 1b41a979-1d1d-4bb3-adac-8d88fb24310e
+          stepCounter: 7f2349b8-35e0-4d91-b8ba-97b21f93aecd
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -258,12 +172,12 @@ operation:
             nodeName: CUSTOMER
         join:
           joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }} "CUSTOMER"
-        name: DIM_CUSTOMER
+        name: FCT_CUSTOMER2
         noLinkRefs: []
-  name: DIM_CUSTOMER
+  name: FCT_CUSTOMER2
   overrideSQL: false
   schema: ""
-  sqlType: Dimension
+  sqlType: Fact
   type: sql
   version: 1
 type: Node
