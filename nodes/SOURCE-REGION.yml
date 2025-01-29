@@ -1,0 +1,77 @@
+fileVersion: 1
+id: fc4f2975-2b15-4a41-b5e1-981a42d9e4d8
+name: REGION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: Region data as defined by TPC-H
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b867f3f8-4f3d-4f4f-82da-0dedebf50361
+          stepCounter: fc4f2975-2b15-4a41-b5e1-981a42d9e4d8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cb9bb15-9501-4c14-979c-bd06c35ec46c
+          stepCounter: fc4f2975-2b15-4a41-b5e1-981a42d9e4d8
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: R_NAME
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 862f2d95-9416-4029-b83b-22ce5b139c27
+          stepCounter: fc4f2975-2b15-4a41-b5e1-981a42d9e4d8
+        config: {}
+        dataType: VARCHAR(152)
+        defaultValue: ""
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+  name: REGION
+  schema: ""
+  sqlType: Source
+  table: REGION
+  type: sourceInput
+  version: 1
+type: Node

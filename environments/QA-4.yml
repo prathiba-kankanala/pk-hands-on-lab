@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "4"
+mappingDefinitions:
+  SOURCE:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF10
+  TARGET:
+    database: PK_TEST
+    schema: QA
+name: QA
+type: Environment
