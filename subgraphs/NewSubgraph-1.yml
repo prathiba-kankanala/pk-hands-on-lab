@@ -1,6 +1,5 @@
 fileVersion: 1
 id: "1"
 name: New Subgraph
-steps:
-  - 795f1fe1-587a-49b3-bd92-152ca6845fde
+steps: []
 type: Subgraph

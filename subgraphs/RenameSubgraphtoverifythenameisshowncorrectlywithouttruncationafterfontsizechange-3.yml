@@ -1,5 +1,0 @@
-fileVersion: 1
-id: "3"
-name: Rename Subgraph to verify the name is shown correctly without truncation after font size change
-steps: []
-type: Subgraph
