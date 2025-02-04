@@ -31,7 +31,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: ""
+            transform: DISTINCT
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6ba10cd7-44ce-431d-b69a-041052d593b6
@@ -67,7 +67,8 @@ operation:
           stepCounter: 9439b034-1abd-483c-8ebd-6dc9e7cebd68
         config: {}
         dataType: VARCHAR(40)
-        description: ""
+        defaultValue: 1eferweewrwerwe
+        description: test description
         name: C_ADDRESS
         nullable: false
         sourceColumnReferences:
@@ -155,9 +156,7 @@ operation:
         name: N_NATIONKEY
         nullable: false
         sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: af6e1951-a299-4c2a-82e0-26ddd8473634
-                stepCounter: 35ef3a15-66ce-434d-a5a8-e7c404ee6f2c
+          - columnReferences: []
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -169,9 +168,7 @@ operation:
         name: N_NAME
         nullable: false
         sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: b306315c-3a07-4044-beb2-e26e0be253a9
-                stepCounter: 35ef3a15-66ce-434d-a5a8-e7c404ee6f2c
+          - columnReferences: []
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -401,6 +398,25 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72743ed3-b47f-48bd-af1b-7e83b9355843
+          stepCounter: 9439b034-1abd-483c-8ebd-6dc9e7cebd68
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 7b00b9e3-73fa-4455-8964-321469c0a06b
+            stepCounter: 9439b034-1abd-483c-8ebd-6dc9e7cebd68
+        name: GH
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

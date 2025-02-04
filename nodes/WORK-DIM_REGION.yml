@@ -187,7 +187,7 @@ operation:
           - locationName: WORK
             nodeName: STG_REGION
         join:
-          joinCondition: ""
+          joinCondition: FROM {{ ref('WORK', 'STG_REGION') }} "STG_REGION"
         name: DIM_REGION
         noLinkRefs: []
   name: DIM_REGION
