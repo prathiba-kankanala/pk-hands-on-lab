@@ -3,7 +3,6 @@ id: c6bbe94e-f282-4633-8000-f6e71eabf1cd
 name: LINEITEM
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Lineitem data as defined by TPC-H
   locationName: SRC
@@ -313,12 +312,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SRC', 'LINEITEM') }}
   name: LINEITEM
   schema: ""
   sqlType: Source
-  table: LINEITEM
   type: sourceInput
   version: 1
 type: Node
