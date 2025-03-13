@@ -1,6 +1,7 @@
 excludeSelector: ""
 fileVersion: 1
 id: "3"
-includeSelector: " +{name:FCT_REGION}"
+includeSelector: |2
+   +{name:FCT_REGION} or { name: STG_PART}
 name: Refresh_QA
 type: Job

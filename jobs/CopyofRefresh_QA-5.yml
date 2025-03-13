@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "5"
-includeSelector: "+{ name: CUSTOMER } OR { name: STG_CUSTOMER }"
+includeSelector: "+{ name: CUSTOMER }"
 name: Copy of Refresh_QA
 type: Job
