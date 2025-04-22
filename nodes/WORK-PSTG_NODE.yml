@@ -4,7 +4,7 @@ name: PSTG_NODE
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: SELECT COUNT(*) FROM PSTG_NODE
     testsEnabled: true
   database: ""
   deployEnabled: true
@@ -18,7 +18,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: e7153834-2249-4b6f-ab98-89c52dd4c7d5
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -35,7 +37,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: 60f4973a-5d26-47db-b67b-abd97db519da
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -52,7 +56,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: 31c85ec6-8af2-4c94-b2d4-f5ec4454442f
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -69,7 +75,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: eed2a63d-1e44-4dce-9146-875a63a22a4e
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -86,7 +94,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: 47df5be8-940f-49a9-beaa-53316e25c227
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -103,7 +113,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: c0b45a27-e74c-43be-b690-ae619be188a5
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -120,7 +132,9 @@ operation:
       - acceptedValues:
           strictMatch: true
           values: []
-        appliedColumnTests: {}
+        appliedColumnTests:
+          hasNull: false
+          isDistinct: false
         columnReference:
           columnCounter: 591ff00f-c482-45be-94f0-037223b8a77f
           stepCounter: a0b888cd-fba1-4d90-9b5f-579d1eb282ba
@@ -135,7 +149,9 @@ operation:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
     cteString: ""
-    enabledColumnTestIDs: []
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
     sourceMapping:
       - aliases: {}
         customSQL:

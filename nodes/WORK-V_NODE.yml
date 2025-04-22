@@ -4,10 +4,10 @@ name: V_NODE
 operation:
   config:
     insertStrategy: UNION
-    selectDistinct: false
+    selectDistinct: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: View Node
   isMultisource: false
   locationName: WORK
   materializationType: view
@@ -15,7 +15,9 @@ operation:
     appliedNodeTests: []
     columns: []
     cteString: ""
-    enabledColumnTestIDs: []
+    enabledColumnTestIDs:
+      - isDistinct
+      - hasNull
     sourceMapping:
       - aliases: {}
         customSQL:
