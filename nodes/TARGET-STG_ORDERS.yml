@@ -1,0 +1,183 @@
+fileVersion: 1
+id: f92e26dc-2d95-4639-b148-b40ed51b0642
+name: STG_ORDERS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Orders data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: afafb4ef-d923-4cba-be60-15deb4d39a7e
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_ORDERKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2bc0ff29-51b4-4e00-9b87-4c5efd7e15cd
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: a2131b09-2e13-4bad-93ff-17f9362c0ca5
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b668ec96-0dc3-4804-921a-8096747f69ca
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: cccc6bdd-ac61-4d49-85d0-00240768b95a
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 276cd9ad-853d-4718-9f15-ea5ae0e38e3e
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: e91ceaeb-ee30-44ed-8427-a055f88637d0
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: O_TOTALPRICE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 16469c34-21a8-451a-adc4-2bd4010157cc
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: eb65bedd-4e1b-49d4-963f-bc3b1cb07bff
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: DATE
+        description: ""
+        name: O_ORDERDATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 051ffb8b-66c5-4635-9cb2-4cbb22e2a421
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 6279678f-5b19-443c-af8d-455a7409ca5e
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d381a28-8c51-4f61-9cee-cf2354af9382
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: SUBSTR("ORDERS"."O_ORDERPRIORITY", 4)
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 26f8a718-0ede-4d42-b071-91dd7346bcef
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_CLERK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7e4fdf3-e301-45c8-a057-4d56fd198e78
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: dd8022c6-191c-41ad-9c67-e22dbd8cdb0b
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 164f27cf-6005-4d4b-be75-792a96b41b94
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+      - appliedColumnTests:
+          hasNull: false
+          isDistinct: false
+        columnReference:
+          columnCounter: 82eb8da7-f3a0-4ab4-8537-fbefc4206cb1
+          stepCounter: f92e26dc-2d95-4639-b148-b40ed51b0642
+        config: {}
+        dataType: VARCHAR(79)
+        description: ""
+        name: O_COMMENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fbf8a4d-6fa5-44f5-9434-1021ecdfad1e
+                stepCounter: 3e1f26af-9713-410c-a897-bdc3890e81f1
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs:
+      - hasNull
+      - isDistinct
+    sourceMapping:
+      - aliases: {}
+        dependencies:
+          - locationName: SRC
+            nodeName: ORDERS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'ORDERS') }} "ORDERS"
+        name: STG_ORDERS
+        noLinkRefs: []
+  name: STG_ORDERS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

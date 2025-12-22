@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "11"
+includeSelector: +{name:ADVV_CUSTOMER}
+name: Refresh_AV_Monthly
+type: Job

@@ -1,0 +1,125 @@
+fileVersion: 1
+id: 4430a408-ab36-439d-88a2-bac76f630938
+name: FCT_NATION
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: Nation data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b441df8-f1e9-4834-b378-f214d4d0cfcf
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3777ee06-9e48-40be-8e45-ab6938c5b3ac
+                stepCounter: 6efda537-440b-48e0-8c6c-2a55cc51956c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4725023-9a5b-4f30-ae39-aadd9842816d
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: N_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 848bd252-54ac-4595-a818-3f7565c45a9f
+                stepCounter: 6efda537-440b-48e0-8c6c-2a55cc51956c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15662c1a-0df0-4953-abbb-b1806c7ed690
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 577a746c-354f-4561-936f-7daf79be7ead
+                stepCounter: 6efda537-440b-48e0-8c6c-2a55cc51956c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 831c4600-5cab-4b80-92a8-697f4d5b5058
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9d76b9e-f7d9-4315-a00a-adbbeaf2304c
+                stepCounter: 6efda537-440b-48e0-8c6c-2a55cc51956c
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 616b130e-d2b9-4682-8324-e185d33962d6
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f76d55fe-dd94-4fb5-bd35-d8e828669e8d
+          stepCounter: 4430a408-ab36-439d-88a2-bac76f630938
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        dependencies:
+          - locationName: SRC
+            nodeName: NATION
+        join:
+          joinCondition: FROM {{ ref('SRC', 'NATION') }} "NATION"
+        name: FCT_NATION
+        noLinkRefs: []
+  name: FCT_NATION
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

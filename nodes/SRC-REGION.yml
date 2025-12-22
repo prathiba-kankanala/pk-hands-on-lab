@@ -1,0 +1,55 @@
+fileVersion: 1
+id: 24a74d12-a34f-49d8-a845-c323699d9df9
+name: REGION
+operation:
+  database: ""
+  deployEnabled: true
+  description: Region data as defined by TPC-H
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6203b8d1-6865-4c47-8612-00028d8a50f0
+          stepCounter: 24a74d12-a34f-49d8-a845-c323699d9df9
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8c52075-addb-446d-b940-cb77c8041594
+          stepCounter: 24a74d12-a34f-49d8-a845-c323699d9df9
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: R_NAME
+        nullable: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 263e85a8-8bfb-44c0-9744-e0a99d6a50df
+          stepCounter: 24a74d12-a34f-49d8-a845-c323699d9df9
+        config: {}
+        dataType: VARCHAR(152)
+        defaultValue: ""
+        description: ""
+        name: R_COMMENT
+        nullable: true
+  name: REGION
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
